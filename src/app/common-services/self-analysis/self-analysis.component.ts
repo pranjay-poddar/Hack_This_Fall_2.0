@@ -65,7 +65,36 @@ export class SelfAnalysisComponent implements OnInit {
     }
     this.light = this.sharingService.getData();
   }
-  
+  loadQuiz(quizName: string) {
+    this.quizService.get(quizName).subscribe(res => {
+      this.quiz = new Quiz(res);
+      this.pager.count = this.quiz.questions.length;
+      this.pager.index=0;
+    
+      this.startTime = new Date();
+      this.ellapsedTime = '00:00';
+      this.timer = setInterval(() => { this.tick(); }, 1000);
+      this.duration = this.parseTime(this.config.duration);
+    });
+    this.mode = 'quiz';
+  }
+
+  tick() {
+    const now = new Date();
+    const diff = (now.getTime() - this.startTime.getTime()) / 1000;
+    if (diff >= this.config.duration) {
+      this.onSubmit();
+    }
+    this.ellapsedTime = this.parseTime(diff);
+  }
+
+  parseTime(totalSeconds: number) {
+    let mins: string | number = Math.floor(totalSeconds / 60);
+    let secs: string | number = Math.round(totalSeconds % 60);
+    mins = (mins < 10 ? '0' : '') + mins;
+    secs = (secs < 10 ? '0' : '') + secs;
+    return `${mins}:${secs}`;
+  }
 
   get filteredQuestions() {
     return (this.quiz.questions) ?

@@ -66,7 +66,70 @@
         </div>
 
 
-        
+        <div class="row text-center" *ngIf="mode == 'review'">
+            <div class="col-4 cursor-pointer" *ngFor="let question of quiz.questions; let index = index">
+                <div (click)="goTo(index)" class="p-3 mb-2 {{
+                isAnswered(question) == 'Answered' ? 'bg-info' : 'bg-warning'
+              }}">
+                    {{ index + 1 }}. {{ isAnswered(question) }}
+                </div>
+            </div>
+            <div class="col-12">
+                <button class="btn grow btn-back btn-primary" (click)="mode = 'quiz'">
+              Back
+            </button>
+            </div>
+        </div>
+        <div class="result" *ngIf="mode == 'result'">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a routerLink="/home">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page"><a href="/self-analysis">Self-Analysis</a></li>
+                </ol>
+            </nav>
+            <h2>Analysis Responses</h2>
+            <div *ngIf="onPositive() == 1">
+                <h1 id="positive-heading-1">
+                    {{analysisResultPositive}}
+                </h1>
+            </div>
+            <div *ngIf="onPositive() == 0">
+                <h1 id="positive-heading-3">
+                    {{analysisResultNegative}}
+                </h1>
+            </div>
+            <div *ngFor="let question of quiz.questions; let index = index">
+                <div class="result-question">
+                    <h5>{{ index + 1 }}. {{ question.name }}</h5>
+                    <div class="row">
+                        <div class="col-6" *ngFor="let Option of question.options">
+                            <input id="{{ Option.id }}" type="checkbox" disabled="disabled" [(ngModel)]="Option.selected" /> {{ Option.name }}
+                        </div>
+                    </div>
+
+                    <div class="p-1 m-3 alert {{
+                  isCorrect(question) == 'correct' ? '' : ''
+                }}"></div>
+                </div>
+            </div>
+            <p class="text-muted" style="text-align: center">
+                All the generated analysis results are tentative and do not carry any guarantee
+            </p>
+            <div class="text-center">
+                <a class="badge badge-info" href="/self-analysis">Take Another Self-Analysis </a>
+            </div>
+        </div>
+        <hr />
+        <div *ngIf="mode != 'result'">
+            <div class="text-center">
+                <!-- <button class="btn grow btn-back btn-primary" (click)="mode = 'quiz'">Back</button> -->
+                <button class="btn grow btn-submit btn-primary" (click)="onSubmit()">
+              Submit
+            </button>
+                <button class="btn grow btn-review btn-info" (click)="mode = 'review'">
+              Review
+            </button>
+            </div>
         </div>
     </div>
 </div>

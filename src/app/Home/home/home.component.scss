@@ -36,3 +36,19 @@
     cursor: pointer;
     transition: width 0.5s;
 }
+
+.button-image {
+    width: 30px;
+    display: none;
+}
+
+.know-button:hover .button-image {
+    display: block;
+}
+
+.know-button:hover {
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}

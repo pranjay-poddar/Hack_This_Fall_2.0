@@ -1,0 +1,27 @@
+.sec {
+  padding: 30px;
+}
+.h1-si {
+  font-size: 50px;
+  margin: 22px 0 -3px;
+}
+.card {
+  border: none;
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05) inset -5px -5px 5px
+    rgba(255, 255, 255, 0.5) inset 5px 5px 5px rgba(0, 0, 0, 0.05) inset -5px -5px
+    5px rgba(255, 255, 255, 0.5);
+
+  border-radius: 15px;
+  margin: 30px;
+}
+.card .box {
+  background: rgb(207, 241, 241);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+
+

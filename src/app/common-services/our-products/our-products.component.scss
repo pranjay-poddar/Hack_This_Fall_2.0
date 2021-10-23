@@ -23,5 +23,19 @@
   align-items: center;
   transition: 0.5s;
 }
-
+.card:hover .box {
+  transform: translateY(-20px);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(45deg, #b95ce4, #4f29cd);
+}
+.card .box .content {
+  padding: 20px;
+  text-align: center;
+}
+.card .box .content h2 {
+  font-size: 1.8em;
+  color: rgb(20, 20, 20);
+  z-index: 1;
+  transition: 0.5s;
+}
 

@@ -1,0 +1,45 @@
+$blue: #7DA0FA;
+$purple:#4747A1;
+$lpurple:#7978E9;
+$pink:#F3797E;
+.container {
+    background-color: #f3f3f3 !important;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+li :hover {
+    background-color: $blue !important;
+    border-radius: 4px;
+    transition: 0.1s ease;
+}
+
+.navbar {
+    position: relative;
+    z-index: 2;
+    .navbar-brand-dark {
+        display: none;
+    }
+}
+
+.bg-light {
+    background-color: #f3f3f3 !important;
+}
+
+.itemActive {
+    background-color: #7da0fa93 !important;
+    border-radius: 4px;
+    transition: 0.1s ease;
+}
+
+.nav-link {
+    color: black !important;
+    font-weight: 500;
+    font-size: 118%;
+    margin-left: 5px;
+    justify-content: center;
+    text-align: center;
+}
+

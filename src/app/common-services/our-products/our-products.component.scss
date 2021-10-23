@@ -38,4 +38,29 @@
   z-index: 1;
   transition: 0.5s;
 }
-
+.card .box .content p {
+  font-size: 1em;
+  font-weight: 300;
+  color: rgb(20, 20, 20);
+  z-index: 1;
+  transition: 0.5s;
+}
+.card:hover .box .content h2,
+.card:hover .box .content p {
+  color: #fff;
+}
+.card .box .content a {
+  position: relative;
+  display: inline-block;
+  padding: 8px 20px;
+  background: #03a9f4;
+  margin-top: 15px;
+  border-radius: 20px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 400;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.card:hover .box .content a {
+  background: #ff568f;
+}

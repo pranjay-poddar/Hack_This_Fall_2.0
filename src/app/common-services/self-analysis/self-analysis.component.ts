@@ -124,7 +124,76 @@ export class SelfAnalysisComponent implements OnInit {
     
   };
   
-  
+  isCorrect(question: Question) {
+//     if(question.options.every(x => x.selected === x.isAnswer)){
+//      return positive = positive + 1;
+// }
+    return question.options.every(x => x.selected === x.isAnswer) ? 'correct' : 'wrong';
+  };
+
+  onSubmit() {
+    
+
+    this.quiz.questions.forEach(x => answers.push({ 'quizId': this.quiz.id, 'questionId': x.id, 'answered': x.answered,'isans0': x.options[0].isAnswer,'isans1': x.options[1].isAnswer,'isans2': x.options[2].isAnswer,'isans3': x.options[3].isAnswer,'s0':x.options[0].selected,'s1':x.options[1].selected,'s2':x.options[2].selected,'s3':x.options[3].selected}));
+    
+    // Post your data to the server here. answers contains the questionId and the users' answer.
+   
+    for(let i = 0; i < 10;i++){
+      
+        if(answers[i].isans0== true && answers[i].s0==true){
+          positive=positive+1;
+        }
+        else if(answers[i].isans1==true && answers[i].s1==true){
+          positive=positive+1;
+        }
+        else if(answers[i].isans2==true && answers[i].s2==true){
+          positive=positive+1;
+        }
+        else if(answers[i].isans3==true && answers[i].s3==true){
+          positive=positive+1;
+        }
+    }
+    
+   
+  // to hide the category option on submit 
+      if(this.hidecomponent=="cat"){
+        this.hidecomponent = "category2";
+      }
+      else{
+        this.hidecomponent = "";
+      }
+      if(this.marginHide == "heading-1"){
+        this.marginHide = "marginHide2";
+      }
+      else{
+        this.marginHide = "";
+      }
+      if(this.heightfix){
+        this.heightfix = "";
+      }
+      else{
+        this.heightfix = "heightfix2";
+      }
+   
+    this.mode = 'result';
+    if(answers[1].quizId==1){
+      this.analysisResultPositive="YOU NEED TO TAKE A COVID-19 TEST, CONTACT YOUR NEARBY COVID TESTING CENTER TO GET TESTED FOR COVID-19!";
+      this.analysisResultNegative="COVID TEST IS NOT REQUIRED! YOU DO NOT HAVE COVID SYMPTOMS"
+    }
+    if(answers[1].quizId==2){
+      this.analysisResultPositive="YOU NEED TO CONSULT A DOCTOR, CONTACT YOUR NEARBY DOCTOR TO GET TESTED FOR EATING DISORDER!";
+      this.analysisResultNegative="YOU ARE HEALTHY! YOU DO NOT HAVE ANY SYMPTOMS OF EATING DISORDER"
+    }
+    if(answers[1].quizId==3){
+      this.analysisResultPositive="YOU NEED TO CONSULT A DOCTOR, CONTACT YOUR NEARBY dOCTOR TO GET TESTED FOR PHYSICAL HEALTH!";
+      this.analysisResultNegative="YOU ARE PHYSICALLY HEALTHY! YOU DO NOT HAVE ANY SYMPTOMS OF PHYSICAL HEALTH DISORDER"
+    }
+    if(answers[1].quizId==4){
+      this.analysisResultPositive="YOU NEED TO CONSULT A DOCTOR, CONTACT YOUR NEARBY PSYCHIATRIST TO GET TESTED FOR MENTAL DISORDER!";
+      this.analysisResultNegative="YOU ARE MENTALY HEALTHY! YOU DO NOT HAVE ANY SYMPTOMS OF MENTAL DISORDER"
+    }
+
+  }
 
   onPositive(){
     // console.log(positive);

@@ -43,3 +43,26 @@ li :hover {
     text-align: center;
 }
 
+button.navbar-toggler {
+    border: 0;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.container {
+    max-width: none;
+}
+
+
+
+@media (max-width:991px) {
+    .nav-link {
+        margin-top: 10px;
+        padding: 1rem 1rem;
+    }
+}

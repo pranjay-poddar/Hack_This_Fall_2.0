@@ -138,3 +138,46 @@ body {
     }
 }
 
+@media (max-width: 992px) {
+    .heading-1 {
+        left: 38vw;
+        font-size: 350%;
+    }
+}
+
+@media (max-width: 768px) {
+    .heading-1 {
+        left: 38vw;
+        font-size: 300%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    h1,
+    .h1 {
+        font-size: 22px;
+    }
+    h2,
+    .h2 {
+        font-size: 20px;
+    }
+    h3,
+    .h3 {
+        font-size: 18px;
+    }
+    .option {
+        font-size: 16px;
+        padding: 6px;
+    }
+}
+
+@media (max-width: 576px) {
+    .heading-1 {
+        left: 38vw;
+        font-size: 300%;
+        line-height: 45px;
+    }
+    .heightfix {
+        max-height: 130vh;
+    }
+}

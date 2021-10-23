@@ -52,3 +52,29 @@
     align-items: center;
     justify-content: space-evenly;
 }
+
+.left-side::after {
+    content: "";
+    width: 10px;
+    height: 100%;
+    background: linear-gradient(#ff469f, #ff6062);
+    position: absolute;
+    left: -20px;
+    top: 0px;
+}
+
+.right-side {
+    position: relative;
+    flex-basis: 60%;
+    display: flex;
+    align-items: center;
+}
+
+.right-side img.controller {
+    width: 90%;
+}
+
+.right-side img.controller-dark {
+    display: none;
+    width: 90%;
+}

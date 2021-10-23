@@ -58,7 +58,21 @@ button.navbar-toggler {
     max-width: none;
 }
 
-
+.dark {
+    background-color: #131417 !important;
+    .navbar {
+        background-color: #131417 !important;
+        .navbar-brand {
+            display: none;
+        }
+        .navbar-brand-dark {
+            display: inline;
+        }
+    }
+    a {
+        color: #fff !important;
+    }
+}
 
 @media (max-width:991px) {
     .nav-link {

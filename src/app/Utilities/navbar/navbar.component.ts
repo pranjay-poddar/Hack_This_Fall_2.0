@@ -14,7 +14,15 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit(): void {
 
-    
+    setInterval(() => {
+      this.light = this.sharingService.getData();
+      if(this.light == "light"){
+        this.navbarcolour = "navbar-light";
+      }
+      else{
+        this.navbarcolour = "navbar-dark";
+      }
+    }, 0.0001);
     }
 
     

@@ -73,7 +73,7 @@ Log On to - [https://swasthify.netlify.app/hospital-login](https://swasthify.net
 
 Hospital login credentials: 
 - Id: apolloLko@gmail.com
-- Password:Apollo@123
+- Password: Apollo@123
 
 Patient login credentials:
 - Id: pranjay1@gmail.com

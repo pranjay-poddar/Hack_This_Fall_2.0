@@ -1,7 +1,7 @@
 <h1 align="center"><b> SWASTHIFY </b></h1> 
 <p> A compassionate effort to aid people out of difficult times, we are resolutely committed to provide our users with hospitals and their services at their fingertips.</p>
 <p align="center">
-<img src="https://github.com/pranjay-poddar/Swasthify/blob/pranjay/src/assets/images/Swasthify_gif.gif" width="700" title="Swasthify Poster">
+<img src="" width="700" title="Swasthify Poster">
 </p >
 
 [![Build Status](https://img.shields.io/circleci/project/all-contributors/all-contributors/master.svg)](https://circleci.com/gh/all-contributors/workflows/all-contributors/tree/master)
@@ -9,7 +9,7 @@
 [![Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors-)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/e30784c5-9efd-4f20-8a47-13f3fb899613/deploy-status)](https://app.netlify.com/sites/allcontributors-org/deploys)
 [![Pull Reminders](https://pullreminders.com/badge.svg)](https://pullreminders.com?ref=badge)
-![GitHub repo size](https://img.shields.io/github/repo-size/pranjay-poddar/Swasthify?color=yellow)
+![GitHub repo size](https://img.shields.io/github/repo-size/pranjay-poddar/Hack_This_Fall_2.0?color=yellow)
 
 ## About Us 
 
@@ -114,7 +114,7 @@ npm run build --prod
 ```
 
 ## How To Contribute
-1.  Fork it ([https://github.com/pranjay-poddar/Swasthify](https://github.com/pranjay-poddar/Swasthify))
+1.  Fork it ([https://github.com/pranjay-poddar/Hack_This_Fall_2.0](https://github.com/pranjay-poddar/Hack_This_Fall_2.0))
 2.  Create your feature branch (`git checkout -b feature/xyz`)
 3.  Commit your changes (`git commit -am 'Add some xyz'`)
 4.  Push to the branch (`git push origin feature/xyz`)

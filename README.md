@@ -64,6 +64,17 @@ Swasthify aims at mitigating the hardships people faced during this pandemic. We
 -   A prescription catalogue, from where a user can keep track of all his past prescriptions.
 -   A doctor's clinic where a user can consult any registered doctor from across the country.
 
+## Sample Login ID and Password
+
+Log On to - [https://swasthify.netlify.app/hospital-login](https://swasthify.netlify.app/hospital-login)
+
+Hospital login credentials: 
+- Id: apolloLko@gmail.com
+- Password:Apollo@123
+
+Patient login credentials:
+- Id: pranjay1@gmail.com
+- Password: Hellosrm@1
 
 ## Installation
 - npm install

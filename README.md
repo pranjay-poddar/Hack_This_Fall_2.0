@@ -1,7 +1,7 @@
-<h1 align="center"><b> SWASTHIFY </b></h1> 
+<h1 align="center"><b> SWASTHIFY (Team #tagSRM) </b></h1> 
 <p> A compassionate effort to aid people out of difficult times, we are resolutely committed to provide our users with hospitals and their services at their fingertips.</p>
 <p align="center">
-<img src="" width="700" title="Swasthify Poster">
+<img src="https://github.com/pranjay-poddar/Hack_This_Fall_2.0/blob/master/src/assets/images/Swasthify_gif.gif" width="700" title="Swasthify Poster">
 </p >
 
 [![Build Status](https://img.shields.io/circleci/project/all-contributors/all-contributors/master.svg)](https://circleci.com/gh/all-contributors/workflows/all-contributors/tree/master)
@@ -9,7 +9,7 @@
 [![Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors-)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/e30784c5-9efd-4f20-8a47-13f3fb899613/deploy-status)](https://app.netlify.com/sites/allcontributors-org/deploys)
 [![Pull Reminders](https://pullreminders.com/badge.svg)](https://pullreminders.com?ref=badge)
-![GitHub repo size](https://img.shields.io/github/repo-size/pranjay-poddar/Hack_This_Fall_2.0?color=yellow)
+![GitHub repo size](https://img.shields.io/github/repo-size/pranjay-poddar/Hack_This_Fall_2.?color=yellow)
 
 ## About Us 
 

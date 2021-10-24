@@ -21,7 +21,6 @@ import Swal from 'sweetalert2';
  
 })
 export class DashboardPatientComponent implements OnInit {
-  
   date=Date();
   sidenav = "";
   sidenavTitle = "";
@@ -34,12 +33,6 @@ export class DashboardPatientComponent implements OnInit {
   patient : Patients = new Patients();
   intervalId:any;
   subscription: any;
-
-  afuConfig = {
-    uploadAPI: {
-      url:"https://example-file-upload-api"
-    }
-};
 
   logoutalert(){  
     Swal.fire('Thank you...', 'Logout succesfully!', 'success')  

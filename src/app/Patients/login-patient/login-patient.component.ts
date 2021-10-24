@@ -64,7 +64,7 @@ export class LoginPatientComponent implements OnInit {
         text: 'Login Succesfull!',  
       });
       setTimeout(() => {
-        // this.router.navigate(['patient-dashboard',this.id]);
+        this.router.navigate(['patient-dashboard',this.id]);
       },1000);
     },
     (Error) =>{alert(Error.error.message)}

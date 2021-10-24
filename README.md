@@ -4,6 +4,7 @@
 <img src="https://github.com/pranjay-poddar/Hack_This_Fall_2.0/blob/master/src/assets/images/Swasthify_gif.gif" width="700" title="Swasthify Poster">
 </p >
 
+```html
 <div align="center">
   [![Build Status](https://img.shields.io/circleci/project/all-contributors/all-contributors/master.svg)](https://circleci.com/gh/all-contributors/workflows/all-contributors     /tree/master)
   [![Crowdin](https://d322cqt584bo4o.cloudfront.net/all-contributors/localized.svg)](https://crowdin.com/project/all-contributors)
@@ -12,6 +13,7 @@
   [![Pull Reminders](https://pullreminders.com/badge.svg)](https://pullreminders.com?ref=badge)
   ![GitHub repo size](https://img.shields.io/github/repo-size/pranjay-poddar/Hack_This_Fall_2.0?color=yellow)
  </div>
+```
 
 ## About Us 
 
